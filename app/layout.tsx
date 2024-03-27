@@ -77,7 +77,9 @@ export default function RootLayout({
         <footer className="bg-white py-[60px] lg:py-0 px-5 text-dark relative z-10">
           <div className="lg:h-[248px] container flex justify-between flex-wrap">
             <div className="flex flex-col justify-center mr-32">
-              <Logo />
+              <Link href="/">
+                <Logo />
+              </Link>
 
               <div className="mt-5 font-medium">© 2024 কপিরাইট, সমস্ত অধিকার সংরক্ষিত</div>
             </div>
@@ -107,11 +109,17 @@ export default function RootLayout({
                 <div className="flex flex-col gap-1">
                   <div className="text-[#778BC6] font-semibold">আইনগত</div>
 
-                  <Link className='hover:underline' href="/privacy-policy">গোপনীয়তা নীতি</Link>
+                  <Link className="hover:underline" href="/privacy-policy">
+                    গোপনীয়তা নীতি
+                  </Link>
 
-                  <Link href='/cookie-policy' className='hover:underline'>কুকি নীতি</Link>
+                  <Link href="/cookie-policy" className="hover:underline">
+                    কুকি নীতি
+                  </Link>
 
-                  <Link href='/terms-and-conditions' className='hover:underline'>শর্তাবলী ও শর্তাদি</Link>
+                  <Link href="/terms-and-conditions" className="hover:underline">
+                    শর্তাবলী ও শর্তাদি
+                  </Link>
                 </div>
 
                 <div className="flex flex-col gap-1">
