@@ -59,9 +59,9 @@ const CookieSettingsModal: FC<Props> = ({ isOpen, setIsOpen }) => {
                           id="checkbox1"
                           type="checkbox"
                           value=""
-                          className="w-6 h-6 border-dark rounded-md accent-mint bg-grey-700"
+                          className="w-6 h-6 border-dark rounded-md accent-mint bg-grey-700 cursor-pointer"
                         />
-                        <label htmlFor="checkbox1">কার্যক্ষমতা</label>
+                        <label htmlFor="checkbox1" className='cursor-pointer'>কার্যক্ষমতা</label>
                       </div>
                     </Button>
 
@@ -71,21 +71,21 @@ const CookieSettingsModal: FC<Props> = ({ isOpen, setIsOpen }) => {
                           id="checkbox2"
                           type="checkbox"
                           value=""
-                          className="w-6 h-6 border-dark rounded-md accent-mint bg-grey-700"
+                          className="w-6 h-6 border-dark rounded-md accent-mint bg-grey-700 cursor-pointer"
                         />
-                        <label htmlFor="checkbox2">কার্যক্ষমতা</label>
+                        <label htmlFor="checkbox2" className='cursor-pointer'>কার্যক্ষমতা</label>
                       </div>
                     </Button>
 
-                    <Button variant="regular" width={184} height={56} className="rounded-lg">
+                    <Button variant="regular" width={184} height={56} className="rounded-lg cursor-default">
                       <div className="flex items-center gap-4">
                         <input
                           id="checkbox3"
                           type="checkbox"
                           value=""
-                          className="w-6 h-6 border-dark rounded-md accent-mint bg-grey-700"
+                          className="w-6 h-6 border-dark rounded-md accent-mint bg-grey-700 cursor-pointer"
                         />
-                        <label htmlFor="checkbox3">কার্যক্ষমতা</label>
+                        <label htmlFor="checkbox3" className='cursor-pointer'>কার্যক্ষমতা</label>
                       </div>
                     </Button>
                   </div>
