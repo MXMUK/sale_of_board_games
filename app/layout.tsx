@@ -32,8 +32,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className=' h-full'>
-      <body className={`${poppins.variable} ${montserrat.variable} font-montserrat h-[calc(100%-82px)]`}>
+    <html lang="en" className=" h-full">
+      <body
+        className={`${poppins.variable} ${montserrat.variable} font-montserrat h-[calc(100%-82px)]`}>
         <header className="fixed top-0 w-full bg-white font-poppins">
           <div className="container flex justify-between items-center h-[100px] md:h-[82px] px-5">
             <div className=" flex md:hidden flex-col justify-around size-6 cursor-pointer">
@@ -42,16 +43,26 @@ export default function RootLayout({
               <div className=" h-0.5 bg-dark"></div>
             </div>
 
-            <Link href='/'><Logo /></Link>
+            <Link href="/">
+              <Logo />
+            </Link>
 
             <ul className="font-semibold hidden md:flex items-center md:gap-6 lg:gap-[75px]">
-              <li className=' hover:underline cursor-pointer'><a href="#aboutUs">আমাদের সম্পর্কে</a></li>
-              <li className=' hover:underline cursor-pointer'><a href="#shop">দোকান</a></li>
-              <li className=' hover:underline cursor-pointer'><a href="#reviews">পর্যালোচনা</a></li>
-              <li className=' hover:underline cursor-pointer'><a href="#contactUs">যোগাযোগ</a></li>
+              <li className=" hover:underline cursor-pointer">
+                <a href="#aboutUs">আমাদের সম্পর্কে</a>
+              </li>
+              <li className=" hover:underline cursor-pointer">
+                <a href="#shop">দোকান</a>
+              </li>
+              <li className=" hover:underline cursor-pointer">
+                <a href="#reviews">পর্যালোচনা</a>
+              </li>
+              <li className=" hover:underline cursor-pointer">
+                <a href="#contactUs">যোগাযোগ</a>
+              </li>
             </ul>
 
-            <Link href='/cart' className="relative cursor-pointer">
+            <Link href="/cart" className="relative cursor-pointer">
               <CartSimple />
 
               <div className="absolute -top-1/2 -right-1/2 w-5 h-5 bg-mint rounded-full text-white flex justify-center items-center text-xs font-montserrat font-bold">
@@ -61,69 +72,77 @@ export default function RootLayout({
           </div>
         </header>
 
-        <main className='mt-[100px] md:mt-[82px] md:min-h-[calc(100%-248px-85px)]'>{children}</main>
+        <main className="mt-[100px] md:mt-[82px] md:min-h-[calc(100%-248px-85px)]">{children}</main>
 
         <footer className="bg-white py-[60px] lg:py-0 px-5 text-dark relative z-10">
-        <div className="lg:h-[248px] container flex justify-between flex-wrap">
-          <div className="flex flex-col justify-center mr-32">
-            <Logo />
+          <div className="lg:h-[248px] container flex justify-between flex-wrap">
+            <div className="flex flex-col justify-center mr-32">
+              <Logo />
 
-            <div className="mt-5 font-medium">© 2024 কপিরাইট, সমস্ত অধিকার সংরক্ষিত</div>
-          </div>
+              <div className="mt-5 font-medium">© 2024 কপিরাইট, সমস্ত অধিকার সংরক্ষিত</div>
+            </div>
 
-          <div className="flex items-center grow mt-9 lg:mt-0">
-            <div className="flex justify-between w-full flex-wrap gap-5">
-              <div className="flex flex-col gap-1">
-                <div className="text-[#778BC6] font-semibold">আমাদের সম্পর্কে</div>
+            <div className="flex items-center grow mt-9 lg:mt-0">
+              <div className="flex justify-between w-full flex-wrap gap-5">
+                <div className="flex flex-col gap-1">
+                  <div className="text-[#778BC6] font-semibold">আমাদের সম্পর্কে</div>
 
-                <div>আমাদের সম্পর্কে</div>
+                  <div>
+                    <a href="#aboutUs">আমাদের সম্পর্কে</a>
+                  </div>
 
-                <div>দোকান</div>
+                  <div>
+                    <a href="#shop">দোকান</a>
+                  </div>
 
-                <div>পর্যালোচনা</div>
+                  <div>
+                    <a href="#reviews">পর্যালোচনা</a>
+                  </div>
 
-                <div>যোগাযোগ</div>
-              </div>
+                  <div>
+                    <a href="#contactUs">যোগাযোগ</a>
+                  </div>
+                </div>
 
-              <div className="flex flex-col gap-1">
-                <div className="text-[#778BC6] font-semibold">আইনগত</div>
+                <div className="flex flex-col gap-1">
+                  <div className="text-[#778BC6] font-semibold">আইনগত</div>
 
-                <div>গোপনীয়তা নীতি</div>
+                  <Link className='hover:underline' href="/privacy-policy">গোপনীয়তা নীতি</Link>
 
-                <div>কুকি নীতি</div>
+                  <Link href='/' className='hover:underline'>কুকি নীতি</Link>
 
-                <div>শর্তাবলী ও শর্তাদি</div>
-              </div>
+                  <Link href='/' className='hover:underline'>শর্তাবলী ও শর্তাদি</Link>
+                </div>
 
-              <div className="flex flex-col gap-1">
-                <div className="text-[#778BC6] font-semibold">যোগাযোগ</div>
+                <div className="flex flex-col gap-1">
+                  <div className="text-[#778BC6] font-semibold">যোগাযোগ</div>
 
-                <div>10 নং স্ট্রিট</div>
+                  <div>10 নং স্ট্রিট</div>
 
-                <div>ঢাকা</div>
+                  <div>ঢাকা</div>
 
-                <div>বাংলাদেশ</div>
+                  <div>বাংলাদেশ</div>
 
-                <div>+880 1547 881110</div>
-              </div>
+                  <div>+880 1547 881110</div>
+                </div>
 
-              <div className="flex gap-4">
-                <a href="https://www.youtube.com/">
-                  <YouTube />
-                </a>
+                <div className="flex gap-4">
+                  <a href="https://www.youtube.com/">
+                    <YouTube />
+                  </a>
 
-                <a href="https://www.facebook.com/">
-                  <Facebook />
-                </a>
+                  <a href="https://www.facebook.com/">
+                    <Facebook />
+                  </a>
 
-                <a href="https://twitter.com/">
-                  <Twitter />
-                </a>
+                  <a href="https://twitter.com/">
+                    <Twitter />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </footer>
       </body>
     </html>
   );

@@ -3,6 +3,7 @@ import React from 'react';
 const Cross: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
+    className='cursor-pointer'
       {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="12"
