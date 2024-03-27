@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [DEMO "Board games store"](https://sale-of-board-games.vercel.app/)
+
+Stack: Next.js, Tailwind, Handless Ui
 
 ## Getting Started
 
