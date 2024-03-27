@@ -44,10 +44,10 @@ export default function RootLayout({
             <Logo />
 
             <ul className="font-semibold hidden md:flex items-center md:gap-6 lg:gap-[75px]">
-              <li>আমাদের সম্পর্কে</li>
-              <li>দোকান</li>
-              <li>পর্যালোচনা</li>
-              <li>যোগাযোগ</li>
+              <li className=' hover:underline cursor-pointer'><a href="#aboutUs">আমাদের সম্পর্কে</a></li>
+              <li className=' hover:underline cursor-pointer'><a href="#shop">দোকান</a></li>
+              <li className=' hover:underline cursor-pointer'><a href="#reviews">পর্যালোচনা</a></li>
+              <li className=' hover:underline cursor-pointer'><a href="#contactUs">যোগাযোগ</a></li>
             </ul>
 
             <div className="relative">

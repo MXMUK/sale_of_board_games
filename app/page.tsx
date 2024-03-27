@@ -33,7 +33,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-dark flex flex-col justify-center items-center text-white text-center lg:px-[150px] px-5 py-[60px] md:py-[117px]">
+      <div id='aboutUs' className="bg-dark flex flex-col justify-center items-center text-white text-center lg:px-[150px] px-5 py-[60px] md:py-[117px]">
         <h4 className="text-[44px] font-bold -tracking-[3px]">আমাদের সম্পর্কে</h4>
 
         <h3 className="mt-8 -tracking-[0.2px] opacity-65 container">
@@ -46,7 +46,7 @@ export default function Home() {
         </h3>
       </div>
 
-      <div className="py-[60px] md:py-20 px-10 flex items-center flex-col text-dark">
+      <div id='shop' className="py-[60px] md:py-20 px-10 flex items-center flex-col text-dark">
         <p className="text-[44px] font-bold">সমস্ত পণ্য অন্বেষণ করুন</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[46px] md:mt-[63px] gap-x-8 gap-y-12">
@@ -64,7 +64,7 @@ export default function Home() {
         </Button>
       </div>
 
-      <div className="bg-dark text-white lg:px-[150px] px-5 py-[60px] md:py-[100px]">
+      <div id='reviews' className="bg-dark text-white lg:px-[150px] px-5 py-[60px] md:py-[100px]">
         <div className="container flex flex-col md:flex-row justify-between gap-[184px]">
           <div className="w-full flex flex-col">
             <Quote />
@@ -101,7 +101,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-orange text-white lg:px-[150px] px-5 py-[60px] md:py-[144px]">
+      <div id='contactUs' className="bg-orange text-white lg:px-[150px] px-5 py-[60px] md:py-[144px]">
         <div className="container flex justify-between items-center">
           <div>
             <span className="text-[44px] font-bold md:block hidden">যোগাযোগ</span>
