@@ -1,6 +1,6 @@
 # [DEMO "Board games store"](https://sale-of-board-games.vercel.app/)
 
-Stack: Next.js, Tailwind, Handless Ui
+**Stack: Next.js, Tailwind, Handless Ui**
 
 ## Getting Started
 
