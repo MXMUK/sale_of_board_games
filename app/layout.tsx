@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="en" className=" h-full">
       <body
         className={`${poppins.variable} ${montserrat.variable} font-montserrat h-[calc(100%-82px)]`}>
-        <header className="fixed top-0 w-full bg-white font-poppins">
+        <header className="fixed top-0 w-full bg-white font-poppins z-10">
           <div className="container flex justify-between items-center h-[100px] md:h-[82px] px-5">
             <div className=" flex md:hidden flex-col justify-around size-6 cursor-pointer">
               <div className=" h-0.5 bg-dark"></div>
