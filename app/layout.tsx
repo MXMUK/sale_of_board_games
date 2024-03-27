@@ -109,9 +109,9 @@ export default function RootLayout({
 
                   <Link className='hover:underline' href="/privacy-policy">গোপনীয়তা নীতি</Link>
 
-                  <Link href='/' className='hover:underline'>কুকি নীতি</Link>
+                  <Link href='/cookie-policy' className='hover:underline'>কুকি নীতি</Link>
 
-                  <Link href='/' className='hover:underline'>শর্তাবলী ও শর্তাদি</Link>
+                  <Link href='/terms-and-conditions' className='hover:underline'>শর্তাবলী ও শর্তাদি</Link>
                 </div>
 
                 <div className="flex flex-col gap-1">
