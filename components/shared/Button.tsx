@@ -25,7 +25,7 @@ const Button: FC<React.PropsWithChildren<Props>> = ({
         variant === 'default',
       'bg-white text-dark':
         variant === 'popup',
-      'bg-white border-black border':
+      'bg-white border-black border text-dark':
         variant === 'regular',
     },
     className

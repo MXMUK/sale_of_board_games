@@ -6,6 +6,7 @@ import Logo from '@/public/icons/Logo';
 import YouTube from '@/public/icons/YouTube';
 import Facebook from '@/public/icons/Facebook';
 import Twitter from '@/public/icons/Twitter';
+import Link from 'next/link';
 
 const montserrat = Montserrat({
   weight: ['300', '400', '500', '600', '700'],
@@ -31,8 +32,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${poppins.variable} ${montserrat.variable} font-montserrat`}>
+    <html lang="en" className=' h-full'>
+      <body className={`${poppins.variable} ${montserrat.variable} font-montserrat h-[calc(100%-82px)]`}>
         <header className="fixed top-0 w-full bg-white font-poppins">
           <div className="container flex justify-between items-center h-[100px] md:h-[82px] px-5">
             <div className=" flex md:hidden flex-col justify-around size-6 cursor-pointer">
@@ -41,7 +42,7 @@ export default function RootLayout({
               <div className=" h-0.5 bg-dark"></div>
             </div>
 
-            <Logo />
+            <Link href='/'><Logo /></Link>
 
             <ul className="font-semibold hidden md:flex items-center md:gap-6 lg:gap-[75px]">
               <li className=' hover:underline cursor-pointer'><a href="#aboutUs">আমাদের সম্পর্কে</a></li>
@@ -50,19 +51,19 @@ export default function RootLayout({
               <li className=' hover:underline cursor-pointer'><a href="#contactUs">যোগাযোগ</a></li>
             </ul>
 
-            <div className="relative">
+            <Link href='/cart' className="relative cursor-pointer">
               <CartSimple />
 
               <div className="absolute -top-1/2 -right-1/2 w-5 h-5 bg-mint rounded-full text-white flex justify-center items-center text-xs font-montserrat font-bold">
                 2
               </div>
-            </div>
+            </Link>
           </div>
         </header>
 
-        <main className='mt-[100px] md:mt-[82px]'>{children}</main>
+        <main className='mt-[100px] md:mt-[82px] md:min-h-[calc(100%-248px-85px)]'>{children}</main>
 
-        <footer className="bg-white py-[60px] lg:py-0 px-5 text-dark">
+        <footer className="bg-white py-[60px] lg:py-0 px-5 text-dark relative z-10">
         <div className="lg:h-[248px] container flex justify-between flex-wrap">
           <div className="flex flex-col justify-center mr-32">
             <Logo />
